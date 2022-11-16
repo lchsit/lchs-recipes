@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.lchsit.lchs-recipes.jamf.GoogleChrome</string>
+	<string>com.github.lchsit.lchs-recipes.jamf.GoogleChrome-LCHS</string>
 	<key>Input</key>
 	<dict>
 		<key>APPLICATION_NAME</key>
