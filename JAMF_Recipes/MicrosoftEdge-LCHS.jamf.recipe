@@ -13,11 +13,11 @@
       <key>CATEGORY</key>
    	<string>WebBrowser</string>
 		<key>NAME</key>
-		<string>Google Chrome</string>
+		<string>Microsoft Edge</string>
 		<key>POLICY_CATEGORY</key>
 		<string>WebBrowser</string>
 		<key>POLICY_NAME</key>
-		<string>Google Chrome</string>
+		<string>Microsoft Edge</string>
 		<key>POLICY_TRIGGER</key>
 		<string>InstallEdge</string>
 		<key>POLICY_TEMPLATE</key>
