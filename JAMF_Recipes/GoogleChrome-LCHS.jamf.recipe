@@ -13,9 +13,11 @@
 		<key>NAME</key>
 		<string>Google Chrome</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>WebBrowser</string>
 		<key>POLICY_NAME</key>
 		<string>Install Latest %NAME%</string>
+		<key>POLICY_TRIGGER</key>
+		<string>salse</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>JamfPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>

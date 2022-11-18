@@ -16,12 +16,8 @@
 	</general>
     <!-- Scope -->
     <scope>
-        <all_computers>false</all_computers>
-        <computer_groups>
-            <computer_group>
-                <name>%GROUP_NAME%</name>
-            </computer_group>
-        </computer_groups>
+        <all_computers>true</all_computers>
+        <computer_groups/>
         <exclusions/>
     </scope>
     <!-- Packages -->
