@@ -16,8 +16,12 @@
 	</general>
     <!-- Scope -->
     <scope>
-        <all_computers>true</all_computers>
-        <computer_groups/>
+        <all_computers>false</all_computers>
+        <computer_groups>
+            <computer_group>
+                <name>%GROUP_NAME%</name>
+            </computer_group>
+        </computer_groups>
         <exclusions/>
     </scope>
     <!-- Packages -->
@@ -37,7 +41,7 @@
     <!-- Self Service details -->
     <self_service>
         <use_for_self_service>true</use_for_self_service>
-        <install_button_text>Install</install_button_text>
+        <install_button_text>install</install_button_text>
         <reinstall_button_text>Reinstall</reinstall_button_text>
         <self_service_display_name>%POLICY_NAME%</self_service_display_name>
         <self_service_description>%SELF_SERVICE_DESCRIPTION%</self_service_description>
