@@ -19,7 +19,7 @@
 		<key>POLICY_NAME</key>
 		<string>Google Chrome</string>
 		<key>POLICY_TRIGGER</key>
-		<string/>
+		<string>InstallEdge</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>JamfPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
