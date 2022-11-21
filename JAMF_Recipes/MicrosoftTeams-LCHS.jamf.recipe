@@ -3,7 +3,7 @@
 <plist version="1.0">
    <dict>
       <key>Identifier</key>
-      <string>ccom.github.lchsit.lchs-recipes.jamf.MicrosoftTeams-pkg-upload</string>
+      <string>com.github.lchsit.lchs-recipes.jamf.MicrosoftTeams-pkg-upload</string>
       <key>Input</key>
       <dict>
          <key>NAME</key>
@@ -16,7 +16,7 @@
       <key>MinimumVersion</key>
       <string>2.0.0</string>
       <key>ParentRecipe</key>
-      <string>com.github.rtrouton.pkg.microsoftteams</string>
+      <string>com.github.lchsit.lchs-recipes.pkg.microsoftteams</string>
       <key>Process</key>
       <array>
          <dict>
