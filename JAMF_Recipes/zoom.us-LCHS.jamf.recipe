@@ -2,50 +2,37 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-   <key>Description</key>
-   <string>Uses parent pkg recipe to download the latest Microsoft Edge installer package and import it into the Jamf Pro server.</string>
-   <key>Identifier</key>
-   <string>com.github.lchsit.lchs-recipes.jamf.microsoftedge-LCHS</string>
-   <key>Input</key>
-   <dict>
-      	<key>NAME</key>
-      	<string>Microsoft Edge</string>
-      	<key>CATEGORY</key>
-   		<string>WebBrowser</string>
+	<key>Identifier</key>
+	<string>com.github.lchsit.lchs-recipes.jamf.zoom.us-LCHS</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Productivity</string>
 		<key>NAME</key>
-		<string>Microsoft Edge</string>
+		<string>zoom.us</string>
 		<key>POLICY_CATEGORY</key>
-		<string>WebBrowser</string>
+		<string>Productivity</string>
 		<key>POLICY_NAME</key>
-		<string>Microsoft Edge</string>
+		<string>Zoom</string>
 		<key>POLICY_TRIGGER</key>
-		<string>InstallEdge</string>
+		<string/>
 		<key>POLICY_TEMPLATE</key>
 		<string>JamfPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</string>
+		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
 		<string>Install Latest %NAME%</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>Microsoft Edge.png</string>
+		<string>Zoom.png</string>
 		<key>UPDATE_PREDICATE</key>
 		<string>pkg_uploaded == False</string>
-   </dict>
+	</dict>
 	<key>MinimumVersion</key>
-	<string>2.0.0</string>
+	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.rtrouton.pkg.microsoftedge</string>
+	<string>com.github.homebysix.pkg.Zoom</string>
 	<key>Process</key>
 	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>category_name</key>
-				<string>%CATEGORY%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -63,15 +50,6 @@
 			</dict>
 			<key>Processor</key>
 			<string>StopProcessingIf</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>category_name</key>
-				<string>%POLICY_CATEGORY%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
