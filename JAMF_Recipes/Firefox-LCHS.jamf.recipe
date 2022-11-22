@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>Identifier</key>
+   <string>com.github.lchsit.lchs-recipes.jamf.firefox-LCHS</string>
+   <key>Input</key>
+   <dict>
+    	<key>NAME</key>
+    	<string>Firefox</string>
+    	<key>CATEGORY</key>
+   		<string>WebBrowser</string>
+		<key>NAME</key>
+		<string>Firefox</string>
+		<key>POLICY_CATEGORY</key>
+		<string>WebBrowser</string>
+		<key>POLICY_NAME</key>
+		<string>Firefox</string>
+		<key>POLICY_TRIGGER</key>
+		<string>InstallEdge</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>JamfPolicyTemplate.xml</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>Get Firefox, a free web browser backed by Mozilla, a non-profit dedicated to internet health and privacy.</string>
+		<key>SELF_SERVICE_DISPLAY_NAME</key>
+		<string>Install Latest %NAME%</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>Firefox.png</string>
+		<key>UPDATE_PREDICATE</key>
+		<string>pkg_uploaded == False</string>
+   </dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.pkg.Firefox_EN</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>predicate</key>
+				<string>%UPDATE_PREDICATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>StopProcessingIf</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%POLICY_CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>policy_name</key>
+				<string>%POLICY_NAME%</string>
+				<key>policy_template</key>
+				<string>%POLICY_TEMPLATE%</string>
+				<key>replace_policy</key>
+				<string>True</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
