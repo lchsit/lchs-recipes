@@ -18,6 +18,8 @@
 		<string>Firefox</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>JamfPolicyTemplate.xml</string>
+		<key>POLCIY_FREQUENCY</key>
+		<string>Once Per Computer</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Get Firefox, a free web browser backed by Mozilla, a non-profit dedicated to internet health and privacy.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
