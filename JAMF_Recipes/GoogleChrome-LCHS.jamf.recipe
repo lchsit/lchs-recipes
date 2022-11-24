@@ -29,7 +29,7 @@
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Chrome brings you the best of Google - from offline integration of Gmail and Docs to automatic website translations from Google Translate.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
-		<string>Install Latest %NAME%</string>
+		<string>%NAME%</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Google Chrome.png</string>
 		<key>DOWNLOAD_URL</key>
