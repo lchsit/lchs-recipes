@@ -6,10 +6,10 @@
    <string>com.github.lchsit.lchs-recipes.jamf.adobereader-LCHS</string>
    <key>Input</key>
    <dict>
-      <key>NAME</key>
-      <string>Adobe Acrobat Reader</string>
-      <key>CATEGORY</key>
-   	<string>Productivity</string>
+      	<key>NAME</key>
+      	<string>Adobe Acrobat Reader</string>
+      	<key>CATEGORY</key>
+   		<string>Productivity</string>
 		<key>NAME</key>
 		<string>Adobe Acrobat Reader</string>
 		<key>POLICY_CATEGORY</key>
@@ -22,6 +22,10 @@
 		<string>JamfPolicyTemplate.xml</string>
 		<key>POLICY_FREQUENCY</key>
 		<string>Once Per Computer</string>
+		<key>ALL_COMPUTERS</key>
+		<string>true</string>
+		<key>POLICY_EXCLUDED_GROUP</key>
+		<string/>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Views, prints, and comments on PDF documents, and connects to Adobe Document Cloud.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>

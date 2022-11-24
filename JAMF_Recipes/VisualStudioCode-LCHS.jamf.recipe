@@ -17,7 +17,7 @@
 		<key>POLICY_NAME</key>
 		<string>%NAME%</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>JamfPolicyTemplateYearBookExcluded.xml</string>
+		<string>JamfPolicyTemplate.xml</string>
 		<key>POLICY_TRIGGER</key>
 		<string/>
 		<key>POLICY_FREQUENCY</key>

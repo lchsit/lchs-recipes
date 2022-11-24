@@ -20,6 +20,10 @@
 		<string>JamfPolicyTemplate.xml</string>
 		<key>POLICY_FREQUENCY</key>
 		<string>Once Per Computer</string>
+		<key>ALL_COMPUTERS</key>
+		<string>true</string>
+		<key>POLICY_EXCLUDED_GROUP</key>
+		<string/>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
