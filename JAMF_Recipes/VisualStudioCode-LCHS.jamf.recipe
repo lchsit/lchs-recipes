@@ -17,7 +17,7 @@
 		<key>POLICY_NAME</key>
 		<string>Install Latest %NAME%</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>JamfPolicyTemplateYearBook Excluded.xml</string>
+		<string>JamfPolicyTemplateYearBookExcluded.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Visual Studio Code is a source code editor which includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
