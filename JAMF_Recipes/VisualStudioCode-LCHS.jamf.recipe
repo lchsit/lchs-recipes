@@ -22,6 +22,8 @@
 		<string/>
 		<key>POLICY_FREQUENCY</key>
 		<string>Once Per Computer</string>
+		<key>ALL_COMPUTERS</key>
+		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
 		<string>YearbookEnrollment</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
