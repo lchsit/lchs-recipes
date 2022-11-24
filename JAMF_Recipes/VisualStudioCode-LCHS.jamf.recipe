@@ -22,6 +22,8 @@
 		<string/>
 		<key>POLCIY_FREQUENCY</key>
 		<string>Once Per Computer</string>
+		<key>POLCIY_EXCLUDED_GROUP</key>
+		<string>EncryptedNoKey</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Visual Studio Code is a source code editor which includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
