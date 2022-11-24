@@ -19,7 +19,11 @@
         <all_computers>true</all_computers>
         <computer_groups/>
         <exclusions>
-            <computer_groups>YearbookEnrollment</computer_groups>
+            <computer_groups>
+                <computer_group>
+                    <name>YearbookEnrollment</name>
+                </computer_group>
+            </computer_groups>
         </exclusions>
     </scope>
     <!-- Packages -->
