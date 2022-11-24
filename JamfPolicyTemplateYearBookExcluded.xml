@@ -18,7 +18,9 @@
     <scope>
         <all_computers>true</all_computers>
         <computer_groups/>
-        <exclusions>YearbookEnrollment</exclusions>
+        <exclusions>
+            <computer_groups>YearbookEnrollment</computer_groups>
+        </exclusions>
     </scope>
     <!-- Packages -->
     <package_configuration>
