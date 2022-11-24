@@ -20,7 +20,7 @@
 		<string>InstallAdobe</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>JamfPolicyTemplate.xml</string>
-		<key>POLCIY_FREQUENCY</key>
+		<key>POLICY_FREQUENCY</key>
 		<string>Once Per Computer</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Views, prints, and comments on PDF documents, and connects to Adobe Document Cloud.</string>
