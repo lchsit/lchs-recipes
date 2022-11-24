@@ -24,6 +24,8 @@
 		<string>Once Per Computer</string>
 		<key>ALL_COMPUTERS</key>
 		<string>true</string>
+		<key>POLICY_EXCLUDED_GROUP</key>
+		<string>dummy</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Chrome brings you the best of Google - from offline integration of Gmail and Docs to automatic website translations from Google Translate.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
