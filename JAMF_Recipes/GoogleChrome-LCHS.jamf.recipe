@@ -27,7 +27,7 @@
 		<key>POLICY_EXCLUDED_GROUP</key>
 		<string>YearBookExcluded</string>
 		<key>POLICY_EXCLUDED_GROUP_2</key>
-		<string/>
+		<string>Office 2019 Installed with Volume License</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Chrome brings you the best of Google - from offline integration of Gmail and Docs to automatic website translations from Google Translate.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
