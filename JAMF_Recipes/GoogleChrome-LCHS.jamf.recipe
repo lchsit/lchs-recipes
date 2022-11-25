@@ -19,15 +19,13 @@
 		<key>POLICY_TRIGGER</key>
 		<string/>
 		<key>POLICY_TEMPLATE</key>
-		<string>JamfPolicyTemplate.xml</string>
+		<string>JamfPolicyTemplate-1Exclusion.xml</string>
 		<key>POLICY_FREQUENCY</key>
 		<string>Once Per Computer</string>
 		<key>ALL_COMPUTERS</key>
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
 		<string>YearBookEnrollment</string>
-		<key>POLICY_EXCLUDED_GROUP_2</key>
-		<string>Office 2019 Installed with Volume License</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Chrome brings you the best of Google - from offline integration of Gmail and Docs to automatic website translations from Google Translate.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
