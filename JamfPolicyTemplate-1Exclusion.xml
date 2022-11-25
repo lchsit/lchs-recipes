@@ -18,7 +18,13 @@
     <scope>
         <all_computers>%ALL_COMPUTERS%</all_computers>
         <computer_groups/>
-        <exclusions/>
+        <exclusions>
+            <computer_groups>
+                <computer_group>
+                    <name>%POLICY_EXCLUDED_GROUP%</name>
+                </computer_group>
+            </computer_groups>
+        </exclusions>
     </scope>
     <!-- Packages -->
     <package_configuration>
