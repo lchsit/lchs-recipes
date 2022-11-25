@@ -17,13 +17,13 @@
 		<key>POLICY_TRIGGER</key>
 		<string/>
 		<key>POLICY_TEMPLATE</key>
-		<string>JamfPolicyTemplate.xml</string>
+		<string>JamfPolicyTemplate-1Exclusion.xml</string>
 		<key>POLICY_FREQUENCY</key>
 		<string>Once Per Computer</string>
 		<key>ALL_COMPUTERS</key>
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
-		<string/>
+		<string>YearBookEnrollment</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
@@ -39,6 +39,15 @@
 	<string>com.github.homebysix.pkg.Zoom</string>
 	<key>Process</key>
 	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
