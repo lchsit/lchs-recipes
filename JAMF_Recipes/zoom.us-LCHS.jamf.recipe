@@ -27,7 +27,7 @@
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
-		<string>Install Latest %NAME%</string>
+		<string>%NAME%</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Zoom.png</string>
 		<key>UPDATE_PREDICATE</key>
