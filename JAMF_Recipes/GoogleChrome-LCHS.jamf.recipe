@@ -19,7 +19,7 @@
 		<key>POLICY_TRIGGER</key>
 		<string/>
 		<key>POLICY_TEMPLATE</key>
-		<string>JamfPolicyTemplate.xml</string>
+		<string>JamfPolicyTemplate-2Exclusion.xml</string>
 		<key>POLICY_FREQUENCY</key>
 		<string>Once Per Computer</string>
 		<key>ALL_COMPUTERS</key>
