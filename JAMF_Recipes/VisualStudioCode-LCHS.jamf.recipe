@@ -16,16 +16,16 @@
 		<string>Productivity</string>
 		<key>POLICY_NAME</key>
 		<string>%NAME%</string>
-		<key>POLICY_TEMPLATE</key>
-		<string>JamfPolicyTemplate-1Exclusion.xml</string>
 		<key>POLICY_TRIGGER</key>
 		<string/>
+		<key>POLICY_TEMPLATE</key>
+		<string>JamfPolicyTemplate-1Exclusion.xml</string>
 		<key>POLICY_FREQUENCY</key>
 		<string>Once Per Computer</string>
 		<key>ALL_COMPUTERS</key>
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
-		<string>YearbookEnrollment</string>
+		<string>YearBookEnrollment</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Visual Studio Code is a source code editor which includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
