@@ -16,6 +16,8 @@
 		<string>WebBrowser</string>
 		<key>POLICY_NAME</key>
 		<string>Firefox</string>
+		<key>POLICY_TRIGGER</key>
+		<string/>
 		<key>POLICY_TEMPLATE</key>
 		<string>JamfPolicyTemplate.xml</string>
 		<key>POLICY_FREQUENCY</key>
