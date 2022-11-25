@@ -25,7 +25,7 @@
 		<key>ALL_COMPUTERS</key>
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
-		<string>YearBookExcluded</string>
+		<string>YearBookEnrollment</string>
 		<key>POLICY_EXCLUDED_GROUP_2</key>
 		<string>Office 2019 Installed with Volume License</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
