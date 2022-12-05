@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.github.lchsit.lchs-recipes.jamf.VLC-LCHS</string>
+	<key>Input</key>
+	<dict>
+		<key>APPLICATION_NAME</key>
+		<string>VLC</string>
+		<key>CATEGORY</key>
+		<string>Media</string>
+		<key>NAME</key>
+		<string>VLC</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Media</string>
+		<key>POLICY_NAME</key>
+		<string>%NAME%</string>
+		<key>POLICY_TRIGGER</key>
+		<string/>
+		<key>POLICY_TEMPLATE</key>
+		<string>JamfPolicyTemplate-1Exclusion.xml</string>
+		<key>POLICY_FREQUENCY</key>
+		<string>Once Per Computer</string>
+		<key>ALL_COMPUTERS</key>
+		<string>true</string>
+		<key>POLICY_EXCLUDED_GROUP</key>
+		<string>YearBookEnrollment</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files, and various streaming protocols.</string>
+		<key>SELF_SERVICE_DISPLAY_NAME</key>
+		<string>%NAME%</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>%NAME%.png</string>
+		<key>UPDATE_PREDICATE</key>
+		<string>pkg_uploaded == False</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.pkg.VLC</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>predicate</key>
+				<string>%UPDATE_PREDICATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>StopProcessingIf</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%POLICY_CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>policy_name</key>
+				<string>%POLICY_NAME%</string>
+				<key>policy_template</key>
+				<string>%POLICY_TEMPLATE%</string>
+				<key>replace_policy</key>
+				<string>True</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
