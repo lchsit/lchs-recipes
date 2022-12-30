@@ -28,6 +28,8 @@
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
 		<string/>
+		<key>PATCH_SOFTWARETITLE_NAME</key>
+		<string>Microsoft Edge</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
@@ -93,6 +95,21 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>policy_name</key>
+				<string>%POLICY_NAME%</string>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARETITLE_NAME%</string>
+				<key>replace_patch</key>
+				<string>False</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		</dict>
 	</array>
 </dict>
