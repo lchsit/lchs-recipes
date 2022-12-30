@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>This recipe takes the Zoom pkg installer for IT, uploads it to your Jamf Pro Server/Distribution Point</string>
+	<key>Identifier</key>
+	<string>com.github.lchsit.lchs-recipes.jamf.ZoomUS-ForIT-LCHS</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Productivity</string>
+		<key>NAME</key>
+		<string>zoom.us</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Productivity</string>
+		<key>POLICY_NAME</key>
+		<string>Zoom</string>
+		<key>POLICY_TRIGGER</key>
+		<string/>
+		<key>POLICY_TEMPLATE</key>
+		<string>JamfPolicyTemplate-1Exclusion.xml</string>
+		<key>POLICY_FREQUENCY</key>
+		<string>Once Per Computer</string>
+		<key>ALL_COMPUTERS</key>
+		<string>true</string>
+		<key>POLICY_EXCLUDED_GROUP</key>
+		<string>YearBookEnrollment</string>
+		<key>PATCH_SOFTWARETITLE_NAME</key>
+		<string>Zoom Client for Meetings</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
+		<key>SELF_SERVICE_DISPLAY_NAME</key>
+		<string>%NAME%</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>Zoom.png</string>
+		<key>UPDATE_PREDICATE</key>
+		<string>pkg_uploaded == False</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.jazzace.pkg.ZoomUS-ForIT</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>predicate</key>
+				<string>%UPDATE_PREDICATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>StopProcessingIf</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+				<key>policy_name</key>
+				<string>%NAME%</string>
+				<key>policy_template</key>
+				<string>%POLICY_TEMPLATE%</string>
+				<key>replace_policy</key>
+				<string>True</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARETITLE_NAME%</string>
+				<key>replace_patch</key>
+				<string>False</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
