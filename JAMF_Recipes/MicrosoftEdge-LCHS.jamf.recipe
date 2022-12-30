@@ -99,10 +99,6 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>icon</key>
-				<string>%SELF_SERVICE_ICON%</string>
-				<key>policy_name</key>
-				<string>%POLICY_NAME%</string>
 				<key>patch_softwaretitle</key>
 				<string>%PATCH_SOFTWARETITLE_NAME%</string>
 				<key>replace_patch</key>

@@ -26,6 +26,8 @@
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
 		<string/>
+		<key>PATCH_SOFTWARETITLE_NAME</key>
+		<string>Mozilla Firefox</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Get Firefox, a free web browser backed by Mozilla, a non-profit dedicated to internet health and privacy.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
@@ -91,6 +93,17 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARETITLE_NAME%</string>
+				<key>replace_patch</key>
+				<string>False</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		</dict>
 	</array>
 </dict>

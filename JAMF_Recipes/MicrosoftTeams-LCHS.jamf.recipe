@@ -10,6 +10,8 @@
          <string>Microsoft Teams</string>
          <key>CATEGORY</key>
          <string>Productivity</string>
+   		<key>PATCH_SOFTWARETITLE_NAME</key>
+	   	<string>Microsoft Teams</string>
          <key>STOPPROCESSINGIF_PREDICATE</key>
          <string>download_changed == FALSE</string>
       </dict>
@@ -46,6 +48,17 @@
             <key>Processor</key>
             <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
          </dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARETITLE_NAME%</string>
+				<key>replace_patch</key>
+				<string>False</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
+		</dict>
       </array>
    </dict>
 </plist>

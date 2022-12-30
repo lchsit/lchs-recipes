@@ -10,6 +10,8 @@
 		<string>Plugins and Frameworks</string>
 		<key>NAME</key>
 		<string>OneDrive</string>
+		<key>PATCH_SOFTWARETITLE_NAME</key>
+		<string>Microsoft OneDrive</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
@@ -34,6 +36,17 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARETITLE_NAME%</string>
+				<key>replace_patch</key>
+				<string>False</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		</dict>
 	</array>
 </dict>

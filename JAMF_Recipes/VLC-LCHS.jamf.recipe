@@ -26,6 +26,8 @@
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
 		<string>YearBookEnrollment</string>
+		<key>PATCH_SOFTWARETITLE_NAME</key>
+		<string>VLC media player</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files, and various streaming protocols.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
@@ -91,6 +93,17 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARETITLE_NAME%</string>
+				<key>replace_patch</key>
+				<string>False</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		</dict>
 	</array>
 </dict>

@@ -26,6 +26,8 @@
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
 		<string>YearBookEnrollment</string>
+		<key>PATCH_SOFTWARETITLE_NAME</key>
+		<string>Google Chrome</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Chrome brings you the best of Google - from offline integration of Gmail and Docs to automatic website translations from Google Translate.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
@@ -93,6 +95,17 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARETITLE_NAME%</string>
+				<key>replace_patch</key>
+				<string>False</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		</dict>
 	</array>
 </dict>
