@@ -28,6 +28,10 @@
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
 		<string/>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string/>
+		<key>SELF_SERVICE_DISPLAY_NAME</key>
+		<string/>
 		<key>SELF_SERVICE_ICON</key>
 		<string>MicrosoftOffice365.png</string>
 		<key>UPDATE_PREDICATE</key>
