@@ -20,7 +20,7 @@
 	<key>MinimumVersion</key>
 	<string>2.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.lchsit.lchs-recipes.pkg.microsoftexcel365</string>
+	<string>com.github.lchsit.lchs-recipes.pkg.microsoftpowerpoint365</string>
 	<key>Process</key>
 	<array>
 		<dict>
