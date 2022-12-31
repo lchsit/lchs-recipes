@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.lchsit.lchs-recipes.jamf.MicrosoftExcel365-LCHS</string>
+	<string>com.github.lchsit.lchs-recipes.jamf.MicrosoftOneNote365-LCHS</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -20,7 +20,7 @@
 	<key>MinimumVersion</key>
 	<string>2.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.lchsit.lchs-recipes.pkg.microsoftonenotel365</string>
+	<string>com.github.lchsit.lchs-recipes.pkg.microsoftonenote365</string>
 	<key>Process</key>
 	<array>
 		<dict>
