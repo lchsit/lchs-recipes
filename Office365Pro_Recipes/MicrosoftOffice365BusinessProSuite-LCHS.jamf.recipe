@@ -65,15 +65,6 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>category_name</key>
-				<string>%POLICY_CATEGORY%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
 				<key>policy_name</key>
 				<string>%POLICY_NAME%</string>
 				<key>policy_template</key>
