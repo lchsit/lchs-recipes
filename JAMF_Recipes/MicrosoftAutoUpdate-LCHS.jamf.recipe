@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.lchsit.lchs-recipes.jamf.MicrosoftAutoUpdate-LCHS</string>
+	<string>com.github.lchsit.lchs-recipes.jamf.MicrosoftAutoUpdate</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
