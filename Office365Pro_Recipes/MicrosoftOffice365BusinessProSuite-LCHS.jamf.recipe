@@ -12,28 +12,20 @@
       	<string>Microsoft Office 365</string>
       	<key>CATEGORY</key>
    		<string>Productivity</string>
-		<key>NAME</key>
-		<string>Microsoft Office 365</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Productivity</string>
+		<string>@_DEPNotify_Enrollment</string>
 		<key>POLICY_NAME</key>
 		<string>Install Office 365</string>
 		<key>POLICY_TRIGGER</key>
 		<string>installOffice365</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>JamfPolicyTemplate.xml</string>
+		<string>JamfPolicyTemplate-NoSelfService.xml</string>
 		<key>POLICY_FREQUENCY</key>
 		<string>Ongoing</string>
 		<key>ALL_COMPUTERS</key>
 		<string>true</string>
 		<key>POLICY_EXCLUDED_GROUP</key>
 		<string/>
-		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string/>
-		<key>SELF_SERVICE_DISPLAY_NAME</key>
-		<string/>
-		<key>SELF_SERVICE_ICON</key>
-		<string>MicrosoftOffice365.png</string>
 		<key>UPDATE_PREDICATE</key>
 		<string>pkg_uploaded == False</string>
    </dict>
