@@ -12,8 +12,10 @@
 		<string>Microsoft Word</string>
 		<key>PATCH_SOFTWARETITLE_NAME</key>
 		<string>Microsoft Word 365</string>
-         <key>STOPPROCESSINGIF_PREDICATE</key>
-         <string>download_changed == FALSE</string>
+        <key>STOPPROCESSINGIF_PREDICATE</key>
+        <string>download_changed == FALSE</string>
+		<key>UPDATE_PREDICATE</key>
+		<string>pkg_uploaded == False</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.0.0</string>
@@ -47,6 +49,15 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>predicate</key>
+				<string>%UPDATE_PREDICATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>StopProcessingIf</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
