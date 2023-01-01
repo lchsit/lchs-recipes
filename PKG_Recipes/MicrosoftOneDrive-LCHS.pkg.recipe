@@ -13,7 +13,7 @@
             <key>SOFTWARETITLE</key>
             <string>OneDrive</string>
             <key>VERSIONTYPE</key>
-            <string>CFBundleShortVersionString</string>
+            <string>CFBundleVersionString</string>
         </dict>
         <key>MinimumVersion</key>
         <string>0.6.0</string>
