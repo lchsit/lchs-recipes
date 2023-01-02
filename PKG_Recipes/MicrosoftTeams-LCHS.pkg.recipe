@@ -13,7 +13,7 @@
          <key>SOFTWARETITLE</key>
          <string>Teams</string>
          <key>VERSIONTYPE</key>
-         <string>CFBundleShortVersionString</string>
+         <string>CFBundleGetInfoString</string>
       </dict>
       <key>MinimumVersion</key>
       <string>1.0.0</string>
