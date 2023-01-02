@@ -55,13 +55,20 @@
          <dict>
             <key>Arguments</key>
             <dict>
-               <key>input_plist_path</key>
-               <string>%RECIPE_CACHE_DIR%/downloads/payload/Microsoft Teams.app/Contents/Info.plist</string>
-               <key>plist_version_key</key>
-               <string>%VERSIONTYPE%</string>
+                <key>pattern</key>
+                <string>%RECIPE_CACHE_DIR%/downloads/payload/Microsoft Teams.app</string>
             </dict>
             <key>Processor</key>
-            <string>Versioner</string>
+            <string>FileFinder</string>
+         </dict>
+         <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>version_argument</key>
+                <string>version</string>
+            </dict>
+            <key>Processor</key>
+            <string>ExecutableFileVersioner</string>
          </dict>
          <dict>
             <key>Processor</key>
