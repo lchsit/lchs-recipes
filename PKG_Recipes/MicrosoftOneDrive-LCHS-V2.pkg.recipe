@@ -52,6 +52,7 @@
                     <string>%RECIPE_CACHE_DIR%/unpack/%SOFTWARETITLE%.pkg/PackageInfo</string>
                 </dict>
             </dict>
+            </dict>
             <dict>
                 <key>Processor</key>
                 <string>PkgCopier</string>
@@ -62,6 +63,18 @@
                     <key>pkg_path</key>
                     <string>%RECIPE_CACHE_DIR%/%VENDOR% %SOFTWARETITLE%-%version%.pkg</string>
                 </dict>
+            </dict>
+            <dict>
+                <key>Arguments</key>
+                <dict>
+                    <key>path_list</key>
+                    <array>
+                        <string>%RECIPE_CACHE_DIR%/unpack</string>
+                        <string>%RECIPE_CACHE_DIR%/payload</string>
+                    </array>
+                </dict>
+                <key>Processor</key>
+                <string>PathDeleter</string>
             </dict>
         </array>
     </dict>

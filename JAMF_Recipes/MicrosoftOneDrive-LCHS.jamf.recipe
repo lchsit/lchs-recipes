@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.lchsit.lchs-recipes.pkg.microsoftonedrive</string>
+	<string>com.github.lchsit.lchs-recipes.pkg.microsoftonedrive2</string>
 	<key>Process</key>
 	<array>
 		<dict>
