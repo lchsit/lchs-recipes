@@ -68,7 +68,7 @@
                 <string>version</string>
             </dict>
             <key>Processor</key>
-            <string>om.github.apizz.apizz-recipes.SharedProcessors/ExecutableFileVersioner</string>
+            <string>com.github.apizz.apizz-recipes.SharedProcessors/ExecutableFileVersioner</string>
          </dict>
          <dict>
             <key>Processor</key>
