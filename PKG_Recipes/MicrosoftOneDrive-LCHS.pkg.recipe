@@ -45,14 +45,15 @@
             </dict>
             <dict>
                 <key>Processor</key>
-                <string>com.github.nmcspadden.shared/PackageInfoVersioner</string>
+                <string>Versioner</string>
                 <key>Arguments</key>
                 <dict>
-                    <key>package_info_path</key>
-                    <string>%RECIPE_CACHE_DIR%/unpack/%SOFTWARETITLE%.pkg/PackageInfo</string>
+                    <key>input_plist_path</key>
+                    <string>%RECIPE_CACHE_DIR%/payload/%SOFTWARETITLE%.app/Contents/Info.plist</string>
+                    <key>plist_version_key</key>
+                    <string>%VERSIONTYPE%</string>
                 </dict>
-            </dict>
-            <dict>
+            </dict>            <dict>
                 <key>Processor</key>
                 <string>PkgCopier</string>
                 <key>Arguments</key>
