@@ -52,7 +52,6 @@
                     <string>%RECIPE_CACHE_DIR%/unpack/%SOFTWARETITLE%.pkg/PackageInfo</string>
                 </dict>
             </dict>
-            </dict>
             <dict>
                 <key>Processor</key>
                 <string>PkgCopier</string>
