@@ -87,7 +87,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>version</key>
-                    <string>%major_version%.%sub_version%</string>
+                    <string>%major_version%.%version%</string>
                 </dict>
             </dict>
             <dict>
