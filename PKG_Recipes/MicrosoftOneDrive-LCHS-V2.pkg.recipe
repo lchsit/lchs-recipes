@@ -53,7 +53,7 @@
                     <key>plist_keys</key>
                     <dict>
                         <key>CFBundleVersion</key>
-                        <string>version</string>
+                        <string>sub_version</string>
                         <key>CFBundleShortVersionString</key>
                         <string>major_version</string>
                     </dict>
@@ -61,6 +61,15 @@
                 <key>Processor</key>
                 <string>PlistReader</string>
             </dict>
+            <dict>
+                <key>Processor</key>
+                <string>EndOfCheckPhase</string>
+                <key>Arguments</key>
+                <dict>
+                   <key>version</key>
+                   <string>%sub_version%</string>
+                </dict>
+             </dict>
             <dict>
                 <key>Processor</key>
                 <string>com.github.homebysix.VersionSplitter/VersionSplitter</string>
