@@ -83,22 +83,13 @@
             </dict>
             <dict>
                 <key>Processor</key>
-                <string>EndOfCheckPhase</string>
-                <key>Arguments</key>
-                <dict>
-                    <key>version</key>
-                    <string>%major_version%.%sub_version%</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>Processor</key>
                 <string>PkgCopier</string>
                 <key>Arguments</key>
                 <dict>
                     <key>source_pkg</key>
                     <string>%pathname%</string>
                     <key>pkg_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%VENDOR% %SOFTWARETITLE%-%version%.pkg</string>
+                    <string>%RECIPE_CACHE_DIR%/%VENDOR% %SOFTWARETITLE%-%major_version%.%sub_version%.pkg</string>
                 </dict>
             </dict>
             <dict>
