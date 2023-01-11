@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>recipes</key>
+    <array>
+        <string>AdobeReader-LCHS.override.jamf</string>
+        <string>Firefox-LCHS.override.jamf</string>
+        <string>GoogleChrome-LCHS.override.jamf</string>
+        <string>MicrosoftAutoUpdate-LCHS.override.jamf</string>
+        <string>MicrosoftEdge-LCHS.override.jamf</string>
+        <string>MicrosoftExcel365-LCHS.override.jamf</string>
+        <string>MicrosoftOffice365BusinessProSuite-LCHS.override.jamf</string>
+        <string>MicrosoftOneDrive-LCHS.override.jamf</string>
+        <string>MicrosoftOneNote365-LCHS.override.jamf</string>
+        <string>MicrosoftOutlook365-LCHS.override.jamf.recipe</string>
+        <string>MicrosoftPowerPoint365-LCHS.override.jamf</string>
+        <string>MicrosoftTeams-LCHS.override.jamf</string>
+        <string>MicrosoftWord365-LCHS.override.jamf</string>
+        <string>VisualStudioCode-LCHS.override.jamf</string>
+        <string>VLC-LCHS.override.jamf</string>
+        <string>Zoom-ForIT-LCHS.override.jamf</string>
+    </array>
+</dict>
+</plist>
