@@ -10,7 +10,7 @@ Set the ARCHITECTURE variable to "x86_64" for Intel
 Set the ARCHITECTURE variable to "arm64" for Apple Silicone
 </string>
     <key>Identifier</key>
-    <string>com.github.chsit.lchs-recipes.download.Audacity</string>
+    <string>com.github.lchsit.lchs-recipes.download.Audacity</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>

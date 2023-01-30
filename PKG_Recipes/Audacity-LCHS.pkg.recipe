@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
       <key>ParentRecipe</key>
-      <string>com.github.chsit.lchs-recipes.download.Audacity</string>
+      <string>com.github.lchsit.lchs-recipes.download.Audacity</string>
 	<key>Process</key>
     <array>
         <dict>
