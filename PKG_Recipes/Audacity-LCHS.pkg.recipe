@@ -16,31 +16,22 @@
       <key>ParentRecipe</key>
       <string>com.github.chsit.lchs-recipes.download.Audacity</string>
 	<key>Process</key>
-	<array>
-		<dict>
-			<key>Processor</key>
-			<string>PackageRequired</string>
-		</dict>
+    <array>
         <dict>
-            <key>Processor</key>
-            <string>CodeSignatureVerifier</string>
             <key>Arguments</key>
             <dict>
-                <key>input_path</key>
-                <string>%PKG%/Audacity.app</string>
-                <key>requirement</key>
-                <string>identifier "org.audacityteam.audacity" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = AWEYX923UX</string>
+                <key>input_plist_path</key>
+                <string>%pathname%/Audacity.app/Contents/Info.plist</string>
+                <key>plist_version_key</key>
+                <string>CFBundleVersion</string>
             </dict>
+            <key>Processor</key>
+            <string>Versioner</string>
         </dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>app_path</key>
-				<string>%PKG%/Audacity.app</string>
-			</dict>
-			<key>Processor</key>
-			<string>AppPkgCreator</string>
-		</dict>
-	</array>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+        </dict>
+    </array>
 </dict>
 </plist>
