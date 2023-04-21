@@ -20,7 +20,7 @@
         <key>MinimumVersion</key>
         <string>0.6.0</string>
         <key>ParentRecipe</key>
-        <string>com.github.rtrouton.download.microsoftonedrive</string>
+        <string>com.github.lchsit.lchs-recipes.download.microsoftonedrive</string>
         <key>Process</key>
         <array>
             <dict>

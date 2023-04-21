@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.lchsit.lchs-recipes.jamf.MicrosoftOneDrive-LCHS</string>
+	<string>com.github.lchsit.lchs-recipes.jamf.alt.MicrosoftOneDrive-LCHS</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.lchsit.lchs-recipes.pkg.microsoftonedrive</string>
+	<string>com.github.lchsit.lchs-recipes.pkg.alt.microsoftonedrive</string>
 	<key>Process</key>
 	<array>
 		<dict>
