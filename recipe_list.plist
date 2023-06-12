@@ -10,6 +10,7 @@
         <string>MicrosoftAutoUpdate-LCHS.override.jamf</string>
         <string>MicrosoftEdge-LCHS.override.jamf</string>
         <string>MicrosoftExcel365-LCHS.override.jamf</string>
+        <string>MicrosoftInTuneCompanyPortal-LCHS.override.jamf</string>
         <string>MicrosoftOffice365BusinessProSuite-LCHS.override.jamf</string>
         <string>MicrosoftOneDrive-LCHS.override.jamf</string>
         <string>MicrosoftOneNote365-LCHS.override.jamf</string>
