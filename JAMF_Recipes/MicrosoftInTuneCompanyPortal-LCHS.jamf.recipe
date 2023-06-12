@@ -18,6 +18,8 @@
          <string>Microsoft Intune Company Portal</string>
          <key>STOPPROCESSINGIF_PREDICATE</key>
          <string>download_changed == FALSE</string>
+         <key>slack_webhook_url</key>
+         <string>https://hooks.slack.com/services/YOUR_URL/YOUR_URL/YOUR_URL</string>
       </dict>
       <key>MinimumVersion</key>
       <string>2.0.0</string>
