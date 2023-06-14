@@ -67,6 +67,11 @@
 			   <key>Processor</key>
 			   <string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		   </dict>
+   		<dict>
+	   		<key>Processor</key>
+		   	<string>com.github.grahampugh.jamf-upload.processors/JamfUploaderSlacker</string>
+			   <key>Arguments</key>
+		   </dict>
       </array>
    </dict>
 </plist>
