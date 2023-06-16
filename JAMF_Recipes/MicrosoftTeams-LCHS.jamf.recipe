@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<dict>
+   <key>Identifier</key>
+   <string>com.github.lchsit.lchs-recipes.jamf.MicrosoftTeams-pkg-upload</string>
+   <key>Input</key>
    <dict>
-      <key>Identifier</key>
-      <string>com.github.lchsit.lchs-recipes.jamf.MicrosoftTeams-pkg-upload</string>
-      <key>Input</key>
-      <dict>
-         <key>NAME</key>
-         <string>Microsoft Teams</string>
-         <key>CATEGORY</key>
-         <string>Productivity</string>
-   		<key>PATCH_SOFTWARETITLE_NAME</key>
-	   	<string>Microsoft Teams</string>
-         <key>STOPPROCESSINGIF_PREDICATE</key>
-         <string>download_changed == FALSE</string>
-      </dict>
-      <key>MinimumVersion</key>
-      <string>2.0.0</string>
-      <key>ParentRecipe</key>
-      <string>com.github.lchsit.lchs-recipes.pkg.microsoftteams</string>
-      <key>Process</key>
-      <array>
+      <key>NAME</key>
+      <string>Microsoft Teams</string>
+      <key>CATEGORY</key>
+      <string>Productivity</string>
+   	<key>PATCH_SOFTWARETITLE_NAME</key>
+   	<string>Microsoft Teams</string>
+      <key>STOPPROCESSINGIF_PREDICATE</key>
+      <string>download_changed == FALSE</string>
+     <key>slack_webhook_url</key>
+     <string>https://hooks.slack.com/services/YOUR_URL/YOUR_URL/YOUR_URL</string>
+   </dict>
+   <key>MinimumVersion</key>
+   <string>2.0.0</string>
+   <key>ParentRecipe</key>
+   <string>com.github.lchsit.lchs-recipes.pkg.microsoftteams</string>
+   <key>Process</key>
+   <array>
          <dict>
             <key>Arguments</key>
             <dict>
@@ -59,6 +61,6 @@
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
 		</dict>
-      </array>
-   </dict>
+   </array>
+</dict>
 </plist>

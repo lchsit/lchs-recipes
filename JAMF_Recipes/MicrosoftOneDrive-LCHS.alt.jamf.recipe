@@ -12,6 +12,8 @@
 		<string>OneDrive</string>
 		<key>PATCH_SOFTWARETITLE_NAME</key>
 		<string>Microsoft OneDrive</string>
+        <key>slack_webhook_url</key>
+        <string>https://hooks.slack.com/services/YOUR_URL/YOUR_URL/YOUR_URL</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
@@ -47,6 +49,10 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
+		</dict>
+   		<dict>
+	   		<key>Processor</key>
+		   	<string>com.github.grahampugh.jamf-upload.processors/JamfUploaderSlacker</string>
 		</dict>
 	</array>
 </dict>

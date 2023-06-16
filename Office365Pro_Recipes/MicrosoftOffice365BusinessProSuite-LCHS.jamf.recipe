@@ -28,6 +28,8 @@
 		<string/>
 		<key>UPDATE_PREDICATE</key>
 		<string>pkg_uploaded == False</string>
+        <key>slack_webhook_url</key>
+        <string>https://hooks.slack.com/services/YOUR_URL/YOUR_URL/YOUR_URL</string>
    </dict>
 	<key>MinimumVersion</key>
 	<string>2.0.0</string>
@@ -74,6 +76,10 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
+   		<dict>
+	   		<key>Processor</key>
+		   	<string>com.github.grahampugh.jamf-upload.processors/JamfUploaderSlacker</string>
 		</dict>
 	</array>
 </dict>
