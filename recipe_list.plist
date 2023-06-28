@@ -4,6 +4,7 @@
 <dict>
     <key>recipes</key>
     <array>
+        <string>Audacity-LCHS.override.jamf</string>
         <string>AdobeReader-LCHS.override.jamf</string>
         <string>Firefox-LCHS.override.jamf</string>
         <string>GoogleChrome-LCHS.override.jamf</string>
