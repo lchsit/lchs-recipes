@@ -14,6 +14,20 @@
          <string>Plugins and Frameworks</string>
          <key>PKG_CATEGORY</key>
          <string>%CATEGORY%</string>
+   		<key>POLICY_CATEGORY</key>
+	   	<string>@_DEPNotify_Enrollment</string>
+		   <key>POLICY_NAME</key>
+   		<string>Intune Company Portal</string>
+	   	<key>POLICY_TRIGGER</key>
+   		<string>installIntune</string>
+	   	<key>POLICY_TEMPLATE</key>
+		   <string>JamfPolicyTemplate-1Exclusion.xml</string>
+   		<key>POLICY_FREQUENCY</key>
+	   	<string>Once Per Computer</string>
+		   <key>ALL_COMPUTERS</key>
+   		<string>true</string>
+	   	<key>POLICY_EXCLUDED_GROUP</key>
+		   <string>YearBookEnrollment</string>
       	<key>PATCH_SOFTWARETITLE_NAME</key>
          <string>Microsoft Intune Company Portal</string>
          <key>STOPPROCESSINGIF_PREDICATE</key>
