@@ -26,6 +26,12 @@
 	   	<string>Once Per Computer</string>
 		   <key>ALL_COMPUTERS</key>
    		<string>true</string>
+   		<key>SELF_SERVICE_DESCRIPTION</key>
+	   	<string>Microsoft Intune helps organizations manage access to their internal apps, data, and resources. Intune Company Portal is the app that lets you, as an employee or student in your organization, securely access those resources.</string>
+		   <key>SELF_SERVICE_DISPLAY_NAME</key>
+   		<string>%NAME%</string>
+	   	<key>SELF_SERVICE_ICON</key>
+		   <string>intune.png</string>
 	   	<key>POLICY_EXCLUDED_GROUP</key>
 		   <string>YearBookEnrollment</string>
       	<key>PATCH_SOFTWARETITLE_NAME</key>
@@ -70,6 +76,30 @@
             <key>Processor</key>
             <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
          </dict>
+   		<dict>
+	   		<key>Arguments</key>
+		   	<dict>
+			   	<key>category_name</key>
+				   <string>%POLICY_CATEGORY%</string>
+   			</dict>
+	   		<key>Processor</key>
+		   	<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+   		</dict>
+   		<dict>
+	   		<key>Arguments</key>
+		   	<dict>
+			   	<key>icon</key>
+				   <string>%SELF_SERVICE_ICON%</string>
+   				<key>policy_name</key>
+	   			<string>%POLICY_NAME%</string>
+		   		<key>policy_template</key>
+			   	<string>%POLICY_TEMPLATE%</string>
+				   <key>replace_policy</key>
+   				<string>True</string>
+	   		</dict>
+		   	<key>Processor</key>
+			   <string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+   		</dict>
 		   <dict>
 			   <key>Arguments</key>
 			   <dict>
