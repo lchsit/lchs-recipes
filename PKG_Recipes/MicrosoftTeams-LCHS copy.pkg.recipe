@@ -3,7 +3,7 @@
 <plist version="1.0">
    <dict>
       <key>Identifier</key>
-      <string>com.github.lchsit.lchs-recipes.pkg.microsoftteams</string>
+      <string>com.github.lchsit.lchs-recipes.pkg.microsoftteams.copy</string>
       <key>Input</key>
       <dict>
          <key>NAME</key>
@@ -18,7 +18,7 @@
       <key>MinimumVersion</key>
       <string>1.0.0</string>
       <key>ParentRecipe</key>
-      <string>com.github.rtrouton.download.microsoftteamsclassic</string>
+      <string>com.github.rtrouton.download.microsoftteams</string>
       <key>Process</key>
       <array>
          <dict>
@@ -56,7 +56,7 @@
             <key>Arguments</key>
             <dict>
                <key>input_plist_path</key>
-               <string>%RECIPE_CACHE_DIR%/downloads/payload/Microsoft Teams classic.app/Contents/Info.plist</string>
+               <string>%RECIPE_CACHE_DIR%/downloads/payload/Microsoft Teams.app/Contents/Info.plist</string>
                <key>plist_version_key</key>
                <string>%VERSIONTYPE%</string>
             </dict>
