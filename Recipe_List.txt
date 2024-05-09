@@ -13,6 +13,7 @@ MicrosoftOneNote365-LCHS.override.jamf
 MicrosoftOutlook365-LCHS.override.jamf
 MicrosoftPowerPoint365-LCHS.override.jamf
 MicrosoftTeams-LCHS.override.jamf
+MicrosoftTeamsForWorkOrSchool-LCHS.override.jamf
 MicrosoftWord365-LCHS.override.jamf
 VisualStudioCode-LCHS.override.jamf
 VLC-LCHS.override.jamf
