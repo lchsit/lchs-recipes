@@ -5,7 +5,7 @@
       <key>Description</key>
       <string>Downloads the latest version of Microsoft's Teams installer package and renames the package.</string>
       <key>Identifier</key>
-      <string>com.github.rtrouton.pkg.microsoftteams</string>
+      <string>com.github.lchsit.lchs-recipes.pkg.microsoftteams</string>
       <key>Input</key>
       <dict>
          <key>NAME</key>
