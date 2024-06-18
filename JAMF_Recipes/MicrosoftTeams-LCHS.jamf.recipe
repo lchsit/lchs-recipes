@@ -54,6 +54,30 @@
             <key>Processor</key>
             <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
          </dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>predicate</key>
+				<string>%UPDATE_PREDICATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>StopProcessingIf</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>patch_softwaretitle</key>
+				<string>%PATCH_SOFTWARETITLE_NAME%</string>
+				<key>replace_patch</key>
+				<string>False</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
+		</dict>
+   		<dict>
+	   		<key>Processor</key>
+		   	<string>com.github.grahampugh.jamf-upload.processors/JamfUploaderSlacker</string>
+		</dict>
       </array>
    </dict>
 </plist>
