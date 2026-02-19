@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.lchsit.lchs-recipes.jamf.MicrosoftOutlook365-LCHS</string>
+	<string>com.github.lchsit.lchs-recipes.525137.jamf.MicrosoftOutlook365-LCHS</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
