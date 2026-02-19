@@ -17,3 +17,5 @@ MicrosoftWord365-LCHS.override.jamf
 VLC-LCHS.override.jamf
 Zoom-ForIT-LCHS.override.jamf
 VisualStudioCode-LCHS.override.jamf
+MicrosoftOutlook365-LCHS.525137.override.jamf
+MicrosoftOutlook365-LCHS.2228621.override.jamf
