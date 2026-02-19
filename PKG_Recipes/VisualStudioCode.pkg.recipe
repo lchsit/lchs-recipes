@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Identifier</key>
-    <string>ccom.github.lchsit.lchs-recipes.pkg.VisualStudioCode</string>
+    <string>com.github.lchsit.lchs-recipes.pkg.VisualStudioCode</string>
     <key>Description</key>
     <string>Downloads latest Visual Studio Code zip using the parent recipe
     com.github.jc0b.download.VisualStudioCode and builds a package.
