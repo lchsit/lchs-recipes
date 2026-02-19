@@ -14,7 +14,7 @@
         <string>Visual Studio Code</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.jc0b.download.VisualStudioCode</string>
+    <string>com.github.lchsit.lchs-recipes.download.VisualStudioCode</string>
     <key>Process</key>
     <array>
         <dict>

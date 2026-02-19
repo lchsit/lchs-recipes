@@ -1,0 +1,31 @@
+Description: Downloads the latest VS code zip, based on an architecture you provide.
+Identifier: com.github.lchsit.lchs-recipes.download.VisualStudioCode
+MinimumVersion: "2.7.6"
+Input:
+  ARCH: "universal" # Intel = "x86_64", Apple Silicon = "arm64", Universal = "universal"
+  NAME: VisualStudioCode
+
+Process:
+  - Processor: FindAndReplace
+    Arguments:
+      find: x86_64
+      input_string: "%ARCH%"
+      replace: x64
+      result_output_var_name: DOWNLOAD_ARCH
+
+  - Processor: URLDownloader
+    Arguments:
+      url: "https://code.visualstudio.com/sha/download?build=stable&os=darwin-%DOWNLOAD_ARCH%-dmg"
+      filename: "%NAME%-%ARCH%.dmg"
+
+  - Processor: EndOfCheckPhase
+
+  - Processor: CodeSignatureVerifier
+    Arguments:
+      input_path: "%pathname%/Visual Studio Code.app"
+      requirement: identifier "com.microsoft.VSCode" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9
+
+  - Processor: Versioner
+    Arguments:
+      input_plist_path: "%pathname%/Visual Studio Code.app/Contents/Info.plist"
+      plist_version_key: "CFBundleShortVersionString"
